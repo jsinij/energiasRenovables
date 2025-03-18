@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --fuente-montserrat: "Montserrat", sans-serif;
+    --fuente-krona: "Krona One", sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilo adicional para centrar los elementos de la navbar */
+.navbar-nav {
+    width: 100%;
+    justify-content: center;
+}
+/* Ajustar el tamaño del ícono */
+.navbar-nav .nav-item img {
+    width: 35px; /* Ajusta el tamaño según tus necesidades */
+    height: auto;
+    margin-right: 5px;
+}
+/* Ajustar el tamaño del texto */
+.navbar-nav .nav-link {
+    font-size: 21px; /* Ajusta el tamaño según tus necesidades */
+    font-family: var(--fuente-montserrat);
+}
+/* Aumentar la altura de la navbar */
+.navbar {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #FAF1E6;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+
+}
+
+/* Estilo adicional para centrar los elementos del carrusel */
+.carousel-item img {
+    max-height: 500px; /* Ajusta el tamaño máximo de las imágenes */
+    object-fit: cover; /* Hace que las imágenes cubran el área sin distorsionarse */
+}
+
+/* Estilo para las leyendas del carrusel */
+.carousel-caption h5 {
+    font-family: var(--fuente-krona);
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra de texto para mejorar la legibilidad */
+}
+
+.carousel-caption p {
+    font-family: var(--fuente-montserrat);
+    font-size: 1.25rem;
+}
+
+/* Estilo adicional para los controles del carrusel (anterior y siguiente) */
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Color negro con opacidad */
+    width: 30px;  /* Hacer los iconos más pequeños */
+    height: 30px; /* Hacer los iconos más pequeños */
+    border-radius: 50%; /* Redondear los bordes */
+}
+
+/* Estilo para las barras de control */
+.carousel-control-prev, .carousel-control-next {
+    width: 5%;  /* Reducir el ancho de las barras */
+    opacity: 0.5; /* Hacer las barras más opacas */
+}
+
+/* Cambiar el color de las flechas al pasar el cursor por encima */
+.carousel-control-prev:hover, .carousel-control-next:hover {
+    opacity: 0.7; /* Aumentar opacidad al pasar el cursor */
+}
+
+/* Asegura que las cards tengan el mismo tamaño */
+.card {
+    height: 100%;  /* Asegura que las tarjetas llenen el espacio disponible */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Hacer que el cuerpo de la card se expanda para ocupar el espacio disponible */
+.card-body {
+    flex-grow: 1;
+}
+
+/* Controlar el tamaño máximo de las imágenes de las tarjetas */
+.card-img-top {
+    height: 200px; /* Ajusta el tamaño de la imagen a una altura uniforme */
+    object-fit: cover; /* Asegura que la imagen cubra el área sin deformarse */
+}
+
+.footer {
+    font-family: var(--fuente-montserrat);
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: #FDFAF6; /* Color de fondo del footer */
+    height: 80px; /* Altura del footer */
+    display: flex;
+    align-items: center; /* Centrar verticalmente el contenido */
+    justify-content: center; /* Centrar horizontalmente el contenido */
+    padding: 0 30px; /* Añadir espacio lateral */
+    text-align: center; /* Alinear el texto al centro */
+    position: relative; /* Necesario para posicionar elementos hijos con position: absolute */
+}
+
+.footer .container {
+    display: flex;
+    align-items: center; /* Centrar verticalmente el contenido dentro del container */
+    justify-content: center; /* Centrar todo el contenido dentro del footer */
+    width: 100%; /* Asegura que ocupe todo el ancho del footer */
+}
+
+.footer_img {
+    position: absolute; /* Posicionar la imagen de forma absoluta */
+    left: 50%; /* Centramos la imagen horizontalmente */
+    transform: translateX(-50%); /* Aseguramos que la imagen se centre correctamente */
+    width: 100px; /* Ajusta el tamaño del logo */
+    height: auto; /* Opcional: hacer el logo semitransparente */
+}
+
+
+.text-right {
+    text-align: right;
+}
+
+.main{
+    background-color: #99BC85;
+}
+
+.card{
+    background-color: #E4EFE7;
+}
